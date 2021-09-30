@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Learning About Intents</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="pass_details"><![CDATA[PASS DETAILS >>]]></string>
+    <string name="web">WEB</string>
+    <string name="sms">SMS</string>
+</resources>

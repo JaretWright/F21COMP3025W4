@@ -15,7 +15,8 @@ class PassDetailsActivity : AppCompatActivity() {
 
         //configure the back button to return to the main activity
         binding.backButton.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+//            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
 
         //read from the intent and display the name on the activity

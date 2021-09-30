@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.F21COMP3025W4">
         <activity
+            android:name=".WebBrowserActivity"
+            android:exported="true" />
+        <activity
             android:name=".PassDetailsActivity"
             android:exported="true" />
         <activity

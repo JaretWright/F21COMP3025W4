@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.f21comp3025w4.databinding.ActivityMainBinding
-import com.example.f21comp3025w4.databinding.ActivityWebBrowserBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,10 +30,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        //Add an intent to navigate to the web browser activity
-        startActivity(Intent(this, WebBrowserActivity::class.java))
+        binding.webButton.setOnClickListener {
+            //Add an intent to navigate to the web browser activity
+            startActivity(Intent(this, WebBrowserActivity::class.java))
+        }
 
-        //Add an intent to navigate to the SMS activity
-        startActivity(Intent(this, SmsActivity::class.java))
+        binding.smsButton.setOnClickListener {
+            //Add an intent to navigate to the SMS activity
+            startActivity(Intent(this, SmsActivity::class.java))
+        }
+
     }
 }
